@@ -26,12 +26,39 @@
 
         <p>
             <label for="salario">Salário:</label>
-            <input type="number" id="salario" nome="salario" required placeholder="Digite o salario do Funcionario">
+            <input type="number" id="salario" name="salario" required placeholder="Digite o salario do Funcionario">
         </p>
 
-            <button type="submit"> cadastro-formulario</button>
+            <button type="submit" id= "cadastro-formulario"> Cadastrar o Funcionário</button> <!-- type="button" impede o envio do formulário e permite que você controle o comportamento com o JavaScript.-->
 
-        <script src="./exe1.js"></script>
+    </form>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Cargo</th>
+                <th>Salário</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela-funcionarios">
+            <!-- Os funcionários cadastrados serão inseridos aqui -->
+        </tbody>
+    </table>
+    
+    <h2>Relatórios</h2>
+<div id="relatorios">
+    <p><strong>Funcionários com salário maior que R$ 5000:</strong> <span id="salario-alto"></span></p>
+    <p><strong>Média salarial:</strong> R$ <span id="media-salarial"></span></p>
+    <p><strong>Cargos únicos:</strong> <span id="cargos-unicos"></span></p>
+    <p><strong>Nomes em maiúsculo:</strong> <span id="nomes-maiusculo"></span></p>
+</div>
+
+
+ <script src="./exe1.js"></script>
+   
     
 </body>
 </html>
